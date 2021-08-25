@@ -1,0 +1,278 @@
+/*
+HTML 5 Template Name: Basic 77
+File: Layout CSS
+Author: OS Templates
+Author URI: https://www.os-templates.com/
+Licence: <a href="https://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+html{overflow-y:scroll; scroll-behavior:smooth;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+
+body{margin:0; padding:0; height:100%; width:100%; font-family:Roboto;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
+
+q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'� '; font-size:26px;}
+q:after{content:' �'; font-size:26px; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; padding:0px 0 0; text-align:left;}
+
+.row1, .row1 a{color:#000000; background-color:#FFFFFF;}
+.row2{color:#979797; background-color:#FFFFFF;}
+.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row3{border-top:1px solid #DEDEDE;}
+.row3, .row3 a{color:#979797; background-color:#FFFFFF;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+.header, .container1{display:block; width:100%; height:780px; margin:0 auto;padding:30px;}
+.footer{display:block; width:960px; max-width:100%; margin:0 auto}
+nav ul{margin:0; padding:0; list-style:none;}
+
+h1{margin:10px; padding:0; font-family:Roboto; font-size:40px; text-align:center; color:#000000; letter-spacing:2px;}
+h2{margin:10px; padding:0; font-family:Roboto; font-size:40px; text-align:center; color:#fff; letter-spacing:2px;}
+h3, h4, h5, h6{margin:10px; padding:0; font-family:Roboto; font-size:25px; font-weight:bold; font-style:normal; line-height:normal; }
+
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+.container2{padding:30px;margin: 0 auto; height:1600px;}
+.container3{padding:30px;margin: 0 auto; height:2300px;}
+.container4{padding:30px;margin: 0 auto; height:3700px;}
+.container5{padding:30px;margin: 0 auto; height:1000px;}
+.container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+.container .last{margin:0;}
+.container .more{text-align:right; text-transform:uppercase; font-size:smaller; font-weight:bold;}
+.white{background-color:#fff;}
+.black{background-color:#000000;}
+.content{
+    position:relative;
+    width: 980px;
+    max-width:100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:20px 0;}
+#footer p{margin:0; padding:0;}
+
+/* Navbar container */
+.navbar {
+  position:fixed;
+  width:100%;
+  z-index:3;
+  overflow: hidden;
+  background: #000000;
+  font-family: "Roboto";
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover {
+  background-color: grey;
+}
+
+
+
+/* Parallax scrolling effect */
+.parallax-window {
+    height: 900px;
+    background: transparent;
+}
+
+/* Fonts */
+
+@font-face{
+    font-family: Lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+@font-face{
+    font-family: Lato;
+    src: url(fonts/Lato-Bold.ttf);
+    font-weight: Bold;
+}
+@font-face{
+    font-family: Lato;
+    src: url(fonts/Lato-Italic.ttf);
+    font-style: Italic;
+}
+@font-face{
+    font-family: Roboto;
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+
+.title{
+    z-index: 2;
+    position: relative;
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 4px #000000;
+    font-family: Lato;
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+}
+.subtitle{
+    z-index: 2;
+    width:100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 1px #000000;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: Italic;
+    color: #fff;
+}
+.head{text-align: center;}
+.sup {vertical-align: super;}
+.info{margin:0; padding:10px;font-family:Roboto; letter-spacing:0.5px; text-align: justify; font-size:15px;line-height: 200%;}
+.row {display: flex;}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.instruct{
+    font-family: Lato;
+    font-size:15px;
+    color: #000000;
+    text-align: center;
+    font-style: Italic;
+}
+
+/* Try buttons */
+.button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-family: Lato;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 75px 0 0;
+  font-weight: Bold;
+  text-shadow: 1px 1px 4px #000000;
+
+}
+
+.button span {
+  z-index:2;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.button span:after {
+  content:'\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* side by side images */
+.row {
+  display: flex;
+  margin:50px 0;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin:30px
+}
+
+/* subscribe section */
+/* Add some padding and a grey background color to containers */
+.container1 {
+  width:100%;
+  padding: 20px;
+  background-color: #000000;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #800020;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
